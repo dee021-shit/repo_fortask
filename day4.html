@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Forms</title>
+    <style>
+        body {        
+            overflow-y: scroll; 
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+        overflow: auto; 
+        max-height: 800px;
+        background-color: cyan;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba;
+        text-align: left;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+        }
+        p {
+            color: black;
+            line-height: 1.6;
+        }
+                .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <marquee id="scrollingText" behavior="scroll" direction="left" scrollamount="20" onmouseover="javascript:stop()" onmouseout="javascript:start()"><h1>Various Keys in Database Management System</h1></marquee>
+    <p style="text-decoration: underline;">Keys</p>
+    <p>A Key is an attribute or a set of attributes, which is used to uniquely identify a record of a table. 
+        It uniquely identifies records or a combination of records from huge database tables.</p>
+    <p style="text-align: center;">Table 1: tbl_students</p>
+    <table style="border: 1px solid black; width: 100%;">
+        <th style="border: 1px solid black; text-align: center;">ID</th>
+        <th style="border: 1px solid black; text-align: center;">Name</th>
+        <th style="border: 1px solid black; text-align: center;">Course</th>
+        <th style="border: 1px solid black; text-align: center;">E-mail</th>
+        <tr>
+        <td style="border: 1px solid black; text-align: center">1</td>
+        <td style="border: 1px solid black;">Deekshit</td>
+        <td style="border: 1px solid black;">Physics</td>
+        <td style="border: 1px solid black;">chhetridixit0621@gmail.com</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; text-align: center">2</td>
+            <td style="border: 1px solid black;">Sushant</td>
+            <td style="border: 1px solid black;">Biology</td>
+            <td style="border: 1px solid black;">sush0831@gmail.com</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; text-align: center">3</td>
+                <td style="border: 1px solid black;">Krishna</td>
+                <td style="border: 1px solid black;">Music</td>
+                <td style="border: 1px solid black;">dfmkrishna@gmail.com</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center">4</td>
+                    <td style="border: 1px solid black;">Devi</td>
+                    <td style="border: 1px solid black;">Journalism</td>
+                    <td style="border: 1px solid black;">theybee@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; text-align: center">5</td>
+                        <td style="border: 1px solid black;">Deeksha</td>
+                        <td style="border: 1px solid black;">Law</td>
+                        <td style="border: 1px solid black;">gcdeeeksha@gmail.com</td>
+                        </tr>
+    </table>
+    <p style="font-style: italic; padding: 1px;">Here, ID and E-mail are keys for tbl_students table.</p>
+    <p class="underline">1&#9672Primary-Key</p>
+    <p>Primary key is an attribute, which uniquely identifies each record within a table. 
+        It can't accept NULL value. We can have only one primary key in a table. A primary key is the column that contains values that uniquely identify each row in a table.
+        A primary key is a special relational database column designated to uniquely identify each table record.</p>
+        <table style="border: 1px solid black; width: 100%;">
+            <th style="border: 1px solid black; text-align: center;">ID</th>
+            <th style="border: 1px solid black; text-align: center;">Reg_No</th>
+            <th style="border: 1px solid black; text-align: center;">Name</th>
+            <th style="border: 1px solid black; text-align: center;">Course</th>
+            <th style="border: 1px solid black; text-align: center;">Citizenship No.</th>
+            <tr>
+            <td style="border: 1px solid black; text-align: center">1</td>
+            <td style="border: 1px solid black;">02382141</td>
+            <td style="border: 1px solid black;">Deekshit</td>
+            <td style="border: 1px solid black;">Physics</td>
+            <td style="border: 1px solid black;">0800805</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; text-align: center">2</td>
+                <td style="border: 1px solid black;">03282246</td>
+                <td style="border: 1px solid black;">Sushant</td>
+                <td style="border: 1px solid black;">Biology</td>
+                <td style="border: 1px solid black;">0800720</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center">3</td>
+                    <td style="border: 1px solid black;">03282183</td>
+                    <td style="border: 1px solid black;">Krishna</td>
+                    <td style="border: 1px solid black;">Music</td>
+                    <td style="border: 1px solid black;">0490215</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; text-align: center">4</td>
+                        <td style="border: 1px solid black;">03282143</td>
+                        <td style="border: 1px solid black;">Devi</td>
+                        <td style="border: 1px solid black;">Journalism</td>
+                        <td style="border: 1px solid black;">0500504</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; text-align: center">5</td>
+                            <td style="border: 1px solid black;">03282142</td>
+                            <td style="border: 1px solid black;">Deeksha</td>
+                            <td style="border: 1px solid black;">Law</td>
+                            <td style="border: 1px solid black;">0750427</td>
+                            </tr>
+                            </table>
+     <p>Example:</p>
+     <p style="font-style: italic;">Reg_No is a primary key in the table.</p>
+     <p class="underline">2&#9672Alternate-Key</p>
+     <p>It is a column or group of columns in a table that uniquely identify every row in that table. All the remaining candidate key which are note selected are called Alternate Key.
+        A table can have multiple choices for an alternate key but only one can be set as a primary key.
+        All the keys which are not primary key are called alternate keys.<br><br>
+        Example:</p>
+        <p style="font-style: italic;">If we chose Reg_No as a primary key then ID and citizenship number will become Alternate Key.</p>
+        <p class="underline">3&#9672Super-Key</p>
+        <p>A super key is aa combination of all possible attributes which can uniquely identify the rows(tuples) in a table.</p>
+        <table style="border: 3px solid black; text-align: center; width: 100%"><th style="padding: 30px; width: 100%; text-align: center;">Student
+        <table style="border: 1px solid black; width: 100%;">
+            <th style="border: 1px solid black; text-align: center;">Roll_No</th>
+            <th style="border: 1px solid black; text-align: center;">Name</th>
+                       <th style="border: 1px solid black; text-align: center;">Reg_No</th>
+            <tr>
+            <td style="border: 1px solid black; text-align: center">047</td>
+            <td style="border: 1px solid black;">Deekshit</td>
+            <td style="border: 1px solid black;">03282141</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; text-align: center">148</td>
+                <td style="border: 1px solid black;">Sushant</td>
+                <td style="border: 1px solid black;">03282246</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center">111</td>
+                    <td style="border: 1px solid black;">Krishna</td>
+                    <td style="border: 1px solid black;">03282142</td>
+                    </tr>
+                    </table></th></table>
+     <p>In the given Student Table, we can have the following keys as the super key.<br>
+     {Roll_no}<br>
+    {Registration_No}<br>
+    {Roll_no,Registration_No}<br>
+    {Roll_no,Name}<br>
+    {Name, Registration_No}<br>
+    {Roll_No,Name,Registration_No}<br>
+    All the above kets are able to uniquely identify each row. So, each of these keys are super keys.</p>
+    <p class="underline">4&#9672Candidate-Key</p>
+    <p>Candidate key is a minimal super key, which contains no extra attributes. It is also called subset of super key.
+        It is a set of attributes that uniquely identify records in a  table. Candidate Key is a super key with no repeated attributes. The primary key should be selected form
+        the candidate keys. Every table must have atleast a single candidate key. A table cna have multiple candidate keys but only a single primary key.<br><br>
+        Example:<br>
+        In the table student(above example) though the super keys {Roll_no}, {Registration_No}, {Roll_no,Registration_No}, {Roll_no,Name}, {Name, Registration_No},  {Roll_No,Name,Registration_No}
+    give us unique value but when we take subset of this key we will get two attributes and this does not satisfy tha minimal super key concept.
+    Hence we have to take either {Roll_No} or {Registration_No} as a candidate key.</p>   
+    <p class="underline">5&#9672Foreign-Key</p>
+    <p>A foreign key is a field(or collection of fields) in one table that refers to the primary key in another table. A foreign key is a key used to link two tables together.<br>
+    Example:<br>
+Consider two tables Studend and Department having their respective attributes as shown in the below table structures:
+<p style="font-size: large;">&#9672Student:</p>
+<table style="border: 1px solid black; width: 100%;">
+    <th style="border: 1px solid black; text-align: center;">Stud_Id</th>
+    <th style="border: 1px solid black; text-align: center;">Name</th>
+    <th style="border: 1px solid black; text-align: center;">Course</th>
+    <tr>
+    <td style="border: 1px solid black; text-align: center">022</td>
+    <td style="border: 1px solid black;text-align: center;">Balen</td>
+    <td style="border: 1px solid black;text-align: center;">Ethical Hacking</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; text-align: center">137</td>
+        <td style="border: 1px solid black; text-align: center;">Sasheet</td>
+        <td style="border: 1px solid black; text-align: center;">AI</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; text-align: center">121</td>
+            <td style="border: 1px solid black; text-align: center;">Manoj</td>
+            <td style="border: 1px solid black;text-align: center;">Biology</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; text-align: center">125</td>
+                <td style="border: 1px solid black; text-align: center;">Nirakar</td>
+                <td style="border: 1px solid black;text-align: center;">Mathematics</td> 
+            </tr>
+            </table>
+<p style="font-size: large;">&#9672Department:</p>
+<table style="border: 1px solid black; width: 60%">
+<tr>
+    <th style="border: 1px solid black; text-align: center;">Dept_Name</th>
+    <th style="border: 1px solid black; text-align: center;">Stud_Id</th>
+</tr>
+<tr>
+    <td style="border: 1px solid black; text-align: center;">Computer_Department</td>
+    <td style="border: 1px solid black; text-align: center;">022</td>
+</tr>
+<tr>
+    <td style="border: 1px solid black; text-align: center;">Computer_Department</td>
+    <td style="border: 1px solid black; text-align: center;">137</td>
+</tr>
+<tr>
+    <td style="border: 1px solid black; text-align: center;">Biology_Department</td>
+    <td style="border: 1px solid black; text-align: center;">121</td>
+</tr>
+<tr>
+    <td style="border: 1px solid black; text-align: center;">Mathematics_Department</td>
+    <td style="border: 1px solid black; text-align: center;">125</td>
+</tr>
+</table><br>
+In the tables, one attribute, you can see is common, that is Stud_Id, but it has different key constraints 
+for both tables. In the Student table, the field Stud_Id is a primary key because it is uniquely identifying all other fields of the student table. On the other hand,
+ Stud_Id is a foreign key attribute for the Department table because it is acting  as primary key attribute for the 
+ Student table. It means that both the student and department table are linked with one another because of the Stud_Id attribute.</p>
+</div>
+    </body>
+    </html>
