@@ -159,14 +159,14 @@
                     <td style="border: 1px solid black;">03282142</td>
                     </tr>
                     </table></th></table>
-     <p>In the given Student Table, we can have the following keys as the super key.<br>
+     In the given Student Table, we can have the following keys as the super key.<br>
      {Roll_no}<br>
     {Registration_No}<br>
     {Roll_no,Registration_No}<br>
     {Roll_no,Name}<br>
     {Name, Registration_No}<br>
     {Roll_No,Name,Registration_No}<br>
-    All the above kets are able to uniquely identify each row. So, each of these keys are super keys.</p>
+    All the above kets are able to uniquely identify each row. So, each of these keys are super keys.
     <p class="underline">4&#9672Candidate-Key</p>
     <p>Candidate key is a minimal super key, which contains no extra attributes. It is also called subset of super key.
         It is a set of attributes that uniquely identify records in a  table. Candidate Key is a super key with no repeated attributes. The primary key should be selected form
@@ -227,11 +227,72 @@ Consider two tables Studend and Department having their respective attributes as
     <td style="border: 1px solid black; text-align: center;">Mathematics_Department</td>
     <td style="border: 1px solid black; text-align: center;">125</td>
 </tr>
-</table><br>
+</table>
 In the tables, one attribute, you can see is common, that is Stud_Id, but it has different key constraints 
 for both tables. In the Student table, the field Stud_Id is a primary key because it is uniquely identifying all other fields of the student table. On the other hand,
  Stud_Id is a foreign key attribute for the Department table because it is acting  as primary key attribute for the 
  Student table. It means that both the student and department table are linked with one another because of the Stud_Id attribute.</p>
+ <p class="underline">6&#9672Composite-Key</p>
+ <p>A composite key in a database is a primary key that consists of two or more columns in a table. This combination of columns uniquely identifies each row in the table. 
+    Composite keys are used when a single column is not sufficient to uniquely identify records.<br>
+    Example:<br>
+Consider a table Orders with columns OrderID and ProductID. Individually, OrderID and ProductID might not be unique, 
+but together they can form a unique identifier for each order-product combination:</p>
+<table style="border: 1px solid black; width: 100%">
+    <tr>
+        <th style="border: 1px solid black; text-align: center;">OrderID</th>
+        <th style="border: 1px solid black; text-align: center;">ProductID</th>
+        <th style="border: 1px solid black; text-align: center;">Quantity</th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; text-align: center; ">1</td>
+        <td style="border: 1px solid black; text-align: center; ">101</td>
+        <td style="border: 1px solid black; text-align: center; ">2</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; text-align: center; ">1</td>
+        <td style="border: 1px solid black; text-align: center; ">102</td>
+        <td style="border: 1px solid black; text-align: center; ">1</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; text-align: center; ">2</td>
+        <td style="border: 1px solid black; text-align: center; ">101</td>
+        <td style="border: 1px solid black; text-align: center; ">3</td>
+    </tr>
+</table>
+<p class="underline">7&#9672Artificial-Key</p>
+<p>An artificial key, also known as a surrogate key, is a unique identifier 
+    for a row in a database table that is not derived from the actual data in the table.
+     Instead, it is created artificially by the database system, typically as an auto-incrementing
+      number or a UUID. Artificial keys are used to ensure each row has a unique and stable identifier, 
+      which simplifies database management and relationships.<br>
+      Example:<br>
+      Consider a table Employees with columns EmployeeID, FirstName, and LastName. 
+      The EmployeeID is an artificial key:
+      <table style="border: 1px solid black; width: 100%">
+        <tr>
+            <th style="border: 1px solid black; text-align: center;">EmployeeID</th>
+            <th style="border: 1px solid black; text-align: center;">FirstName</th>
+            <th style="border: 1px solid black; text-align: center;">LastName</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; text-align: center;">1</td>
+            <td style="border: 1px solid black; text-align: center;">John</td>
+            <td style="border: 1px solid black; text-align: center;">Chamling</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; text-align: center;">2</td>
+            <td style="border: 1px solid black; text-align: center;">Jane</td>
+            <td style="border: 1px solid black; text-align: center;">Foster</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; text-align: center;">3</td>
+            <td style="border: 1px solid black; text-align: center;">Emma</td>
+            <td style="border: 1px solid black; text-align: center;">Watson</td>
+        </tr>
+      </table>
+      In this case, EmployeeID is an auto-incrementing number that uniquely identifies 
+      each employee, independent of their names.</p>
 </div>
     </body>
     </html>
