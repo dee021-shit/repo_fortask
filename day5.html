@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Forms</title>
+    <style>
+        body {        
+            overflow-y: scroll; 
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+        overflow: auto; 
+        max-height: 500px;
+        background-color: cyan;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+
+        }
+        h1 {
+            font-size: 50px;
+            color: black;
+            text-align: center;
+        }
+        p {
+            color: black;
+            line-height: 1.6;
+        }
+                .underline {
+            text-decoration: underline;
+            font-size: large;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee id="scrollingText" behavior="scroll" direction="left" scrollamount="20" onmouseover="javascript:stop()" onmouseout="javascript:start()"><h1>Steps for Various Basic Setups</h1></marquee>
+        <p class="underline">1&#9672To Create a G-Mail Account:</p>
+        <p>I-Go to Gmail Website: Open your web browser and go to the Gmail website (https://mail.google.com/).<br><br>
+            II-Click on "Create account": Look for the "Create account" option and click on it.<br><br>            
+            III-Fill in the details: Enter your first name, last name, desired email address (which will be your Gmail address), and create a password. Google may also ask for your phone number and current email address for security and account recovery purposes.<br><br>            
+            IV-Verify your account: Google will send a verification code to your phone number or current email address. Enter this code to verify your account.<br><br>            
+           V-Agree to terms and create account: Once verified, agree to Google's terms of service and privacy policy, then click on "Create account". Your Gmail account is now ready to use!</p>
+
+           <p class="underline">2&#9672To Create GitHub Account:</p>
+           <p>I-Go to GitHub Website: Open your web browser and go to the GitHub website (https://github.com/).<br><br>
+            II-Sign up: Click on the "Sign up" button, usually located at the top right corner of the page.<br><br>            
+            III-Fill in the details: Enter your username, email address, and a strong password.<br><br>            
+            IV-Choose a plan: Select either a free plan or a paid plan depending on your needs. For most users, the free plan is sufficient.<br><br>            
+            V-Verify your email: GitHub will send a verification email to the email address you provided. Click on the link in the email to verify your email address and activate your GitHub account.</p>
+
+            <p class="underline">3&#9672To Connect VS-Code to GitHub Account:</p>
+            <p>I-Install Git: If you haven't already, download and install Git from https://git-scm.com/.<br><br>
+                II-Open VS Code: Launch Visual Studio Code (VS Code).<br><br>                
+                III-Install Git extension: In VS Code, go to the Extensions view (Ctrl+Shift+X), search for "Git", and install the extension provided by Microsoft.<br><br>                
+                IV-Sign in to GitHub in VS Code: Click on the Source Control view (Ctrl+Shift+G), and then click on the "Sign in to GitHub" button. Follow the prompts to sign in with your GitHub credentials.<br><br>                
+                V-Set up a repository: If you haven't created a repository yet, you can do so using the "Initialize Repository" option in the Source Control view. Otherwise, open your existing repository in VS Code.</p>
+
+            <p class="underline">4&#9672To Clone/Pull Repository from GitHub:</p>
+            <p>I-Copy the repository URL: On GitHub, navigate to the repository you want to clone. Click on the "Code" button and copy the HTTPS or SSH URL.<br><br>
+                II-Open VS Code: Launch Visual Studio Code (VS Code).<br><br>                
+                III-Open the Command Palette: Press Ctrl+Shift+P (Cmd+Shift+P on macOS) to open the Command Palette.<br><br>               
+                IV-Enter Git commands: Type "Git: Clone" in the Command Palette and paste the URL you copied earlier. Press Enter.<br><br>                
+                V-Choose local directory: Choose a local directory where you want to clone the repository. VS Code will clone the repository from GitHub to your local machine.</p>
+
+            <p class="underline">5&#9672To Push Repository/Folder to GitHub:</p>
+            <p>I-Make changes and stage them: In VS Code, make changes to your code or files. Stage these changes by clicking on the Source Control view (Ctrl+Shift+G) and clicking the "+" button next to each changed file.<br><br>
+                II-Commit changes: Enter a commit message that describes your changes in the textbox provided above the file list in the Source Control view and press Ctrl+Enter to commit.<br><br>                
+                III-Push changes to GitHub: After committing, click on the three dots (...) next to your repository name in the Source Control view and choose "Push". Alternatively, you can use the "Git: Push" command from the Command Palette (Ctrl+Shift+P).<br><br>                
+                IV-Enter GitHub credentials: If prompted, enter your GitHub username and password or Personal Access Token to authenticate and push your changes to GitHub.<br><br>                
+                V-Verify on GitHub: Go to your repository on GitHub in your web browser to verify that your changes have been pushed successfully.</p>
+
+            <p class="underline">6&#9672To Publish the Repo as a Live-Site:</p>
+            <p>I-Choose a hosting provider: Decide where you want to host your website. Common options include GitHub Pages, Netlify, Vercel, or a traditional web hosting service.<br><br>
+                II-Prepare your project: Make sure your project has an index.html file or an entry point that serves as the homepage of your website.<br><br>                
+                III-Create a repository for your site: If you haven't already, create a new repository on GitHub where you will store your website's files.<br><br>                
+                IV-Configure hosting settings: Depending on your hosting provider, follow their instructions to configure your repository as a live site. For example, for GitHub Pages, you may need to set the branch to "main" (or "master" depending on your default branch).<br><br>                
+                V-Deploy your site: Once configured, deploy your site using the instructions provided by your hosting provider. This usually involves pushing your website files to the configured branch on GitHub or using their CLI tools.</p>
+</div>
+</body>
+</html>
+
+

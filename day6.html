@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 15;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            overflow: auto; 
+            max-height: 500px;
+            background-color: cyan;
+            padding: 15;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+        h1 {
+            font-size: 50px;
+            color: black;
+            text-align: center;
+        }
+        p {
+            color: black;
+            line-height: 1.6;
+        }
+                .underline {
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee id="scrollingText" behavior="scroll" direction="left" scrollamount="20" onmouseover="javascript:stop()" onmouseout="javascript:start()"><h1>Structured Query Language(SQL)</h1></marquee>
+        <p class="underline">1&#9672What is SQL?</p>
+        <p>SQL, or Structured Query Language, is a standardized programming language used for managing data in relational database management systems (RDBMS). 
+            It enables users to query, insert, update, and delete data within tables, defining and manipulating database structures such as tables and indexes. 
+            SQL commands like SELECT, INSERT, UPDATE, and DELETE retrieve, add, modify, and remove data respectively, while constraints like PRIMARY KEY and FOREIGN KEY enforce data integrity rules. 
+            SQL also supports joins to combine data from multiple tables based on related columns. Widely implemented in databases such as MySQL, PostgreSQL, and SQLite, SQL is essential for developers 
+            and data professionals alike, facilitating efficient data manipulation and database management tasks.</p>
+            <p class="underline">2&#9672Tasks Carried Out on 6th Day/Practical Class</p>
+            <p>Based on the SQL commands provided, here are the step-by-step actions that were attempted, inferred from the commands assigned on computer lab:<br><br>
+                &#11166<span style="font-size: 15; font-weight: bold;">Creation and Table Creation:</span><br>
+                  - Created a database named `SECTION_G`.<br>
+                  - Created a table named `STUDENT_INFO` within `SECTION_G` with columns `ID` (auto-increment primary key), `NAME`, `CLASS`, `SECTION`, and `STREAM`.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Data Manipulation and Selection:</span><br>
+                  - Attempted to select all data from `student_info` and `booktable1` (assuming to check existing data or verify commands).<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Additional Database and Table Creation:</span><br>
+                  - Attempted to create another database named `SECTIONG`.<br>
+                  - Created a table named `BOOKTABLE1` within `SECTIONG` with columns `ID`, `NAME`, `PRICE`, and `PUBLICATION`.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Alterations to Table Structure:</span><br>
+                  - Added a new column `AUTHOR` to the `BOOKTABLE1` table.<br>
+                  - Dropped the `AUTHOR` column from the `BOOKTABLE1` table.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Data Insertion and Selection:</span><br>
+                  - Inserted a row into `BOOKTABLE1` with values for `ID`, `NAME`, `PRICE`, and `PUBLICATION`.<br>
+                  - Inserted multiple rows into `BOOKTABLE1` with varying values for `ID`, `NAME`, `PRICE`, and `PUBLICATION`.<br>
+                  - Selected data from `BOOKTABLE1` after each insertion to verify changes.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Data Filtering and Projection:</span><br>
+                  - Selected specific columns (`ID` and `NAME`) from `BOOKTABLE1`.<br>
+                  - Selected all data from `STUDENT_INFO`.<br>
+                  - Filtered `BOOKTABLE1` rows where `ID` equals 1, or where `NAME` equals "COMPUTER".<br>
+                  - Filtered `BOOKTABLE1` rows where `ID` equals 1 or 4 simultaneously, and then where both `ID` equal 1 and 4.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Data Updates:</span><br>
+                  - Updated `ID` to 201 where `ID` equals 1 in `BOOKTABLE1`.<br>
+                  - Updated `NAME` to "ADVANCED PHYSICS" where `NAME` equals "PHYSICS" in `BOOKTABLE1`.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Data Range Queries:</span><br>
+                  - Selected rows from `BOOKTABLE1` where `PRICE` is between 2000 and 4000, and then between 400 and 500.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Data Deletion:</span><br>
+                  - Deleted the row from `BOOKTABLE1` where `ID` equals 5.<br>                  
+                &#11166<span style="font-size: 15; font-weight: bold;">Table and Database Deletion:</span><br>
+                  - Dropped the `BOOKTABLE1` table.<br>
+                  - Dropped the `SECTION_G` database.<br></p>
+        <p class="underline">3&#9672Used SQL Keywords in The Process</p>
+        <p>
+            The used SQL Keywords to carry out the task provided in computer practical class are listed below chronologically.<br>
+             <pre>CREATE DATABASE SECTION_G</pre>
+            <pre>CREATE TABLE STUDENT_INFO (ID INT(3) PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), CLASS INT(3), SECTION VARCHAR(255), STREAM VARCHAR(255))</pre>
+            <pre>SELECT * FROM `student_info`</pre>
+            <pre>SELECT * FROM `student_info`</pre>
+            <pre>CREATE DATABASE SECTIONG</pre>
+            <pre>CREATE TABLE BOOKTABLE1 (ID INT(3), NAME VARCHAR(255), PRICE INT(5), PUBLICATION VARCHAR(255))</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>ALTER TABLE booktable1 ADD COLUMN AUTHOR VARCHAR(255)</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>ALTER TABLE booktable1 DROP COLUMN AUTHOR</pre>
+            <pre>INSERT INTO booktable1 (ID, NAME, PRICE, PUBLICATION) VALUES(1, "COMPUTER", 450, "HERITAGE PUBLICATION")</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>INSERT INTO booktable1 (ID, NAME, PRICE, PUBLICATION) VALUES(2, "PHYSICS", 500, "AAYAM PUBLICATION"), (3, "CHEMISTRY", 489, "ASMITA PUBLICATION"), (4, "ENGLISH", 120, "NEPAL GOVERNMENT"), (5, "NEPALI", 80, "NEPAL GOVERNMENT")</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM booktable1</pre>
+            <pre>SELECT ID, NAME FROM booktable1</pre>
+            <pre>SELECT * FROM `student_info`</pre>
+            <pre>SELECT * FROM `student_info`</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM booktable1 WHERE ID=1</pre>
+            <pre>SELECT * FROM booktable1 WHERE NAME="COMPUTER"</pre>
+            <pre>SELECT * FROM booktable1 WHERE ID=1 OR ID=4</pre>
+            <pre>SELECT * FROM booktable1 WHERE ID=1 AND ID=4</pre>
+            <pre>UPDATE booktable1 SET ID= 201 WHERE ID=1</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>UPDATE booktable1 SET NAME="ADVANCED PHYSICS" WHERE NAME="PHYSICS"</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM booktable1 WHERE PRICE BETWEEN 2000 AND 4000</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM booktable1 WHERE PRICE BETWEEN 400 AND 500</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>SELECT * FROM booktable1 WHERE PRICE BETWEEN 400 AND 500</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>DELETE FROM booktable1 WHERE ID=5</pre>
+            <pre>SELECT * FROM `booktable1`</pre>
+            <pre>DROP TABLE booktable1</pre>
+            <pre>DROP DATABASE section_g</pre>
+        Source: Viewed from console on xampp.</p>
+        </div>
+        </body>
+        </html>
+        

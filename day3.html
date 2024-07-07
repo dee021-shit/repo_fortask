@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            overflow: auto; 
+            max-height: 500px;
+            background-color: cyan;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            font-size: 50px;
+            color: black;
+            text-align: center;
+        }
+        p {
+            color: black;
+            line-height: 1.6;
+        }
+                .underline {
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee id="scrollingText" behavior="scroll" direction="left" scrollamount="20" onmouseover="javascript:stop()" onmouseout="javascript:start()"><h1>Basic Terminologies in DBMS</h1></marquee>
+        <p class="underline">DBMS Terminologies</p>
+        <p>There are some fundamental terms in the field of Database Management Systems.
+            Understanding these terms is crucial for effectively working with database and DBMS softwares.</p>
+        <p class="underline">1&#9672Table</p>
+        <p>A database table is composed of records and fields that hold data.
+            Tables are also called datasheets. Each table in a database holds data about a different, but related, subject. A table stores all of the records for a particular category.
+            The following is an example of student table.
+        </p>
+        <table style="border: 1px solid black; width: 100%;">
+            <th style="border: 1px solid black; text-align: center;">Roll No.</th>
+            <th style="border: 1px solid black; text-align: center;">Name</th>
+            <th style="border: 1px solid black; text-align: center;">Address</th>
+            <th style="border: 1px solid black; text-align: center;">Fees</th>
+            <tr>
+            <td style="border: 1px solid black; text-align: center">1</td>
+            <td style="border: 1px solid black; text-align: center">Deekshit</td>
+            <td style="border: 1px solid black; text-align: center">Beni</td>
+            <td style="border: 1px solid black; text-align: center">4500</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; text-align: center">2</td>
+                <td style="border: 1px solid black; text-align: center">Rajani</td>
+                <td style="border: 1px solid black; text-align: center">Lisbon</td>
+                <td style="border: 1px solid black; text-align: center">6000</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center">3</td>
+                    <td style="border: 1px solid black; text-align: center">Hari</td>
+                    <td style="border: 1px solid black; text-align: center">Kathmandu</td>
+                    <td style="border: 1px solid black; text-align: center">12000</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; text-align: center">4</td>
+                        <td style="border: 1px solid black; text-align: center">Sita</td>
+                        <td style="border: 1px solid black; text-align: center">Bhaktapur</td>
+                        <td style="border: 1px solid black; text-align: center">3200</td>
+                        </tr>
+        </table>
+        <p class="underline">2&#9672Field</p>
+        <p>A 'field' is one piece of data or information about a person or thing. A field is a column in a table that is designed to maintain specific information about every record in the table. 
+        The fields in the STUDENT table consists of Roll no., Name, Address and Fees.
+        </p>
+        <p class="underline">3&#9672Records</p>
+        <p>Each table consists a lot of records. Data is stored in records.
+            A record is all of the data or information about one person or one thing. 
+            A record is composed of fields and contains all the data about one particular person, company, or item in a database.
+            Following is a single row of data or record in the STUDENT table:
+            <table style="border: 1px solid black; width: 100%">
+                <tr>
+                <td style="border: 1px solid black; text-align: center; width: 25%">2</td>
+                <td style="border: 1px solid black; text-align: center;">Rajani</td>
+                <td style="border: 1px solid black; text-align: center;">Lisbon</td>
+                <td style="border: 1px solid black; text-align: center;">6000</td></tr>
+            </table>
+        </p>
+        <p class="underline">4&#9672Object</p>
+        <p>A database object is any entity defined in a database that is used to store or reference data.
+        Anything which we make from create command is known as a Database Object. It can be used to hold and manipulate the data.
+        Some of the examples ofdatabase objects are: table, views, index etc.
+        </p>
+
+    </div>
+    </body>
+    </html>
